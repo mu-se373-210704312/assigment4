@@ -59,45 +59,45 @@ class _MyHomePageState extends State<MyHomePage>  {
         body: Column(
           children: <Widget>[
             SizedBox(
-              height: 40,
+              height: 40,//for padding
             ),
             const Text(
               "Calculate your",
-              style: TextStyle(fontSize: 24, color: Colors.deepOrangeAccent),
+              style: TextStyle(fontSize: 24, color: Colors.deepOrangeAccent),//color and font size
             ),
             SizedBox(
-              height: 40,
+              height: 40,//for padding
             ),
             Container(
-              color: Colors.cyanAccent,
-              alignment: Alignment.center,
+              color: Colors.cyanAccent,//color
+              alignment: Alignment.center,//aligment for centering
               child: const Text(
                 "AGE",
-                style: TextStyle(fontSize: (25), color: Colors.black),
+                style: TextStyle(fontSize: (25), color: Colors.black),//color
               ),
             ),
             SizedBox(
-              height: 40,
+              height: 40,//for padding
             ),
             const Text(
               "In Years,Months,Days,Minutes",
-              style: TextStyle(fontSize: 23, color: Colors.blue),
+              style: TextStyle(fontSize: 23, color: Colors.blue),//font size and color
             ),
             SizedBox(
-              height: 40,
+              height: 40,//for padding
             ),
             ElevatedButton(
-              onPressed:_presentDatePicker,
+              onPressed:_presentDatePicker,//function referance for press
               child: const Text("Date Picker"),
 
             ),
             SizedBox(
-              height: 40,
+              height: 40,//for padding
             ),
             Text(_selectedDate != null
-                ? _selectedDate.toString()
+                ? _selectedDate.toString()//if statement for text
                 : 'No date selected!',
-              style: TextStyle(fontSize: 21, color: Colors.red),
+              style: TextStyle(fontSize: 21, color: Colors.red),//font size andcolor
             ),
           ],
         ),
